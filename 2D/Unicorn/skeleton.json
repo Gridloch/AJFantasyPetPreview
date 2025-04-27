@@ -1,0 +1,548 @@
+{
+"skeleton": {
+	"hash": "v3jrdRsBRMk",
+	"spine": "4.2.40",
+	"x": -748.23,
+	"y": -806.78,
+	"width": 2003.05,
+	"height": 1335.36,
+	"images": "",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Size", "parent": "root", "length": 450, "rotation": 90, "y": -304.16 }
+],
+"slots": [
+	{ "name": "EyeWhite", "bone": "Size", "attachment": "EyeWhite" },
+	{ "name": "EyeColor", "bone": "Size", "attachment": "EyeColor" },
+	{ "name": "EyeShade", "bone": "Size", "attachment": "EyeShade" },
+	{ "name": "Base", "bone": "Size", "attachment": "Base" },
+	{ "name": "Pattern3", "bone": "Size", "attachment": "Pattern3" },
+	{ "name": "Pattern2", "bone": "Size", "attachment": "Pattern2" },
+	{ "name": "Ear", "bone": "Size", "attachment": "Ear" },
+	{ "name": "Tail1", "bone": "Size", "attachment": "Tail1" },
+	{ "name": "Tail2", "bone": "Size", "attachment": "Tail2" },
+	{ "name": "Mane1Back", "bone": "Size", "attachment": "Mane1" },
+	{ "name": "Mane2Back", "bone": "Size", "attachment": "Mane2" },
+	{ "name": "HornColor", "bone": "Size", "attachment": "HornColor" },
+	{ "name": "HornFixed", "bone": "Size", "attachment": "HornFixed" },
+	{ "name": "Mane1", "bone": "Size", "attachment": "Mane1" },
+	{ "name": "Mane2", "bone": "Size", "attachment": "Mane2" },
+	{ "name": "Lashes", "bone": "Size", "attachment": "Lashes" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Base": {
+				"Base": { "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Ear": {
+				"Ear": { "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/0",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/OrdinaryMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/OrdinaryShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Eyes/OrdinaryWhites", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/1",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/SurprisedMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/SurprisedShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Eyes/SurprisedWhites", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/2",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/CuteMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/CuteShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/3",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/CreepyMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/CreepyShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Eyes/CreepyWhites", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/4",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/SpookyMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/SpookyShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/5",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/SwirlyMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/SwirlyShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/6",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/BlankMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/BlankShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/7",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/CrossedOutMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/CrossedOutShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/8",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/StarryMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/StarryShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/9",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/LovelyMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/LovelyShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Eyes/LovelyWhites", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/10",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/SuspiciousMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/SuspiciousShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/11",
+		"attachments": {
+			"EyeColor": {
+				"EyeColor": { "name": "Eyes/StrikingMain", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeShade": {
+				"EyeShade": { "name": "Eyes/StrikingShade", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"EyeWhite": {
+				"EyeWhite": { "name": "Eyes/StrikingWhites", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Eye/Lashes",
+		"attachments": {
+			"Lashes": {
+				"Lashes": { "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/0",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/ShiningLong", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/ShiningLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/1",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/CrackedLong", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/CrackedLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/2",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/CrystalLong", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/CrystalLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/3",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/SharpLong", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/SharpLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/4",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/RadiantLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Long/5",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/JeweledLong", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/JeweledLongFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/0",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/Shining", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/ShiningFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/1",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/Cracked", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/CrackedFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/2",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/Crystal", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/CrystalFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/3",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/Sharp", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/SharpFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/4",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/RadiantFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Horn/Normal/5",
+		"attachments": {
+			"HornColor": {
+				"HornColor": { "name": "Horns/Jeweled", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"HornFixed": {
+				"HornFixed": { "name": "Horns/JeweledFixed", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/0",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Cropped/TopCropped1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Hair/Mane - Cropped/BottomCropped1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Cropped/TopCropped2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Hair/Mane - Cropped/BottomCropped2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/1",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Curled/TopCurled1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Hair/Mane - Curled/BottomCurled2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Curled/TopCurled2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Hair/Mane - Curled/BottomCurled1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/2",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Flowing/TopFlowing1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Hair/Mane - Flowing/BottomFlowing1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Flowing/TopFlowing2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Hair/Mane - Flowing/BottomFlowing2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Pattern/0",
+		"attachments": {
+			"Pattern2": {
+				"Pattern2": { "name": "Dappled2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Pattern3": {
+				"Pattern3": { "name": "Dappled3", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Pattern/1",
+		"attachments": {
+			"Pattern2": {
+				"Pattern2": { "name": "Fluffy2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Pattern3": {
+				"Pattern3": { "name": "Fluffy3", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Pattern/2",
+		"attachments": {
+			"Pattern2": {
+				"Pattern2": { "name": "Silky2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Pattern3": {
+				"Pattern3": { "name": "Silky3", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Pattern/3",
+		"attachments": {
+			"Pattern2": {
+				"Pattern2": { "name": "Tuxedo2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Pattern3": {
+				"Pattern3": { "name": "Tuxedo3", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/0",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Long/Long1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Long/Long2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/1",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Poised/Poised1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Poised/Poised2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/2",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Sleek/Sleek1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Sleek/Sleek2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	}
+],
+"animations": {
+	"0": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.7, "y": 0.7 }
+				]
+			}
+		}
+	},
+	"1": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.8, "y": 0.8 }
+				]
+			}
+		}
+	},
+	"2": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.9, "y": 0.9 }
+				]
+			}
+		}
+	},
+	"3": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"4": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.1, "y": 1.1 }
+				]
+			}
+		}
+	},
+	"5": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.2, "y": 1.2 }
+				]
+			}
+		}
+	},
+	"6": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.3, "y": 1.3 }
+				]
+			}
+		}
+	}
+}
+}
