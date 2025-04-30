@@ -10,7 +10,7 @@ class Load extends Phaser.Scene
 
     preload ()
     {
-        // this.load.image('card_back', './images/selector/card_back.png');
+        this.load.image('background', './images/FantasyBG.png');
     }
 
     create ()

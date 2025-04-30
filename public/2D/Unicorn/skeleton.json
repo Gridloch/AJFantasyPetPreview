@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "v3jrdRsBRMk",
+	"hash": "bwr+EsvJxRo",
 	"spine": "4.2.40",
-	"x": -748.23,
-	"y": -806.78,
-	"width": 2003.05,
-	"height": 1335.36,
+	"x": -354.5,
+	"y": -343.5,
+	"width": 709,
+	"height": 687,
 	"images": "",
 	"audio": "./audio"
 },
@@ -23,13 +23,13 @@
 	{ "name": "Ear", "bone": "Size", "attachment": "Ear" },
 	{ "name": "Tail1", "bone": "Size", "attachment": "Tail1" },
 	{ "name": "Tail2", "bone": "Size", "attachment": "Tail2" },
+	{ "name": "Lashes", "bone": "Size", "attachment": "Lashes" },
 	{ "name": "Mane1Back", "bone": "Size", "attachment": "Mane1" },
 	{ "name": "Mane2Back", "bone": "Size", "attachment": "Mane2" },
 	{ "name": "HornColor", "bone": "Size", "attachment": "HornColor" },
 	{ "name": "HornFixed", "bone": "Size", "attachment": "HornFixed" },
 	{ "name": "Mane1", "bone": "Size", "attachment": "Mane1" },
-	{ "name": "Mane2", "bone": "Size", "attachment": "Mane2" },
-	{ "name": "Lashes", "bone": "Size", "attachment": "Lashes" }
+	{ "name": "Mane2", "bone": "Size", "attachment": "Mane2" }
 ],
 "skins": [
 	{
@@ -352,7 +352,7 @@
 		}
 	},
 	{
-		"name": "Mane/0",
+		"name": "Mane/0/0",
 		"attachments": {
 			"Mane1": {
 				"Mane1": { "name": "Hair/Mane - Cropped/TopCropped1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -369,7 +369,7 @@
 		}
 	},
 	{
-		"name": "Mane/1",
+		"name": "Mane/0/1",
 		"attachments": {
 			"Mane1": {
 				"Mane1": { "name": "Hair/Mane - Curled/TopCurled1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -386,7 +386,7 @@
 		}
 	},
 	{
-		"name": "Mane/2",
+		"name": "Mane/0/2",
 		"attachments": {
 			"Mane1": {
 				"Mane1": { "name": "Hair/Mane - Flowing/TopFlowing1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -399,6 +399,57 @@
 			},
 			"Mane2Back": {
 				"Mane2": { "name": "Hair/Mane - Flowing/BottomFlowing2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/1/0",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Cropped/TopCroppedAlt1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Cropped/TopCroppedAlt2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Empty", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/1/1",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Curled/TopCurledAlt1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Hair/Mane - Curled/BottomCurled2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Curled/TopCurledAlt2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Hair/Mane - Curled/BottomCurled1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Mane/1/2",
+		"attachments": {
+			"Mane1": {
+				"Mane1": { "name": "Hair/Mane - Flowing/TopFlowingAlt1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane1Back": {
+				"Mane1": { "name": "Hair/Mane - Flowing/BottomFlowingAlt1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2": {
+				"Mane2": { "name": "Hair/Mane - Flowing/TopFlowingAlt2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Mane2Back": {
+				"Mane2": { "name": "Hair/Mane - Flowing/BottomFlowingAlt2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
 			}
 		}
 	},
@@ -447,7 +498,7 @@
 		}
 	},
 	{
-		"name": "Tail/0",
+		"name": "Tail/0/0",
 		"attachments": {
 			"Tail1": {
 				"Tail1": { "name": "Hair/Tail - Long/Long1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -458,7 +509,7 @@
 		}
 	},
 	{
-		"name": "Tail/1",
+		"name": "Tail/0/1",
 		"attachments": {
 			"Tail1": {
 				"Tail1": { "name": "Hair/Tail - Poised/Poised1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -469,7 +520,40 @@
 		}
 	},
 	{
-		"name": "Tail/2",
+		"name": "Tail/0/2",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Sleek/Sleek1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Sleek/Sleek2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/1/0",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Long/Long1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Long/Long2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/1/1",
+		"attachments": {
+			"Tail1": {
+				"Tail1": { "name": "Hair/Tail - Poised/PoisedAlt1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			},
+			"Tail2": {
+				"Tail2": { "name": "Hair/Tail - Poised/PoisedAlt2", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
+			}
+		}
+	},
+	{
+		"name": "Tail/1/2",
 		"attachments": {
 			"Tail1": {
 				"Tail1": { "name": "Hair/Tail - Sleek/Sleek1", "x": 304.16, "rotation": -90, "width": 709, "height": 687 }
@@ -481,7 +565,7 @@
 	}
 ],
 "animations": {
-	"0": {
+	"0/0": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -490,7 +574,7 @@
 			}
 		}
 	},
-	"1": {
+	"0/1": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -499,7 +583,7 @@
 			}
 		}
 	},
-	"2": {
+	"0/2": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -508,7 +592,7 @@
 			}
 		}
 	},
-	"3": {
+	"0/3": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -517,7 +601,7 @@
 			}
 		}
 	},
-	"4": {
+	"0/4": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -526,7 +610,7 @@
 			}
 		}
 	},
-	"5": {
+	"0/5": {
 		"bones": {
 			"Size": {
 				"scale": [
@@ -535,11 +619,74 @@
 			}
 		}
 	},
-	"6": {
+	"0/6": {
 		"bones": {
 			"Size": {
 				"scale": [
 					{ "x": 1.3, "y": 1.3 }
+				]
+			}
+		}
+	},
+	"1/0": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.7, "y": -0.7 }
+				]
+			}
+		}
+	},
+	"1/1": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.8, "y": -0.8 }
+				]
+			}
+		}
+	},
+	"1/2": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 0.9, "y": -0.9 }
+				]
+			}
+		}
+	},
+	"1/3": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "y": -1 }
+				]
+			}
+		}
+	},
+	"1/4": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.1, "y": -1.1 }
+				]
+			}
+		}
+	},
+	"1/5": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.2, "y": -1.2 }
+				]
+			}
+		}
+	},
+	"1/6": {
+		"bones": {
+			"Size": {
+				"scale": [
+					{ "x": 1.3, "y": -1.3 }
 				]
 			}
 		}
