@@ -65,8 +65,8 @@ class Dressup extends Phaser.Scene
         this.load.image('button', './images/button.png');
         this.load.image('closeButton', './images/closeButton.png');
 
-        this.load.spineAtlas("uniAtlas", `./2D/Unicorn/skeleton.atlas`);
-        this.load.spineJson("uniJson", `./2D/Unicorn/skeleton.json`);
+        this.load.spineAtlas("uniAtlas", `./2D/Unicorn/uniSkeleton.atlas`);
+        this.load.spineJson("uniJson", `./2D/Unicorn/uniSkeleton.json`);
 
 
         this.load.scenePlugin({
