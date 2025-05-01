@@ -4,8 +4,6 @@ const COLOR_PRIMARY_HEX = '#424242';
 const COLOR_SECONDARY = 0x6b6b6b;
 const COLOR_SECONDARY_HEX = '#6b6b6b';
 
-// TODO: Add pet certificate to see details
-// TODO: Add rarity indicator to show if rare traits are present
 // TODO: Add waterwark to bg to make it obvious it's from the dressup?
 
 // Actual game start
@@ -64,6 +62,8 @@ class Dressup extends Phaser.Scene
 
         this.load.image('button', './images/button.png');
         this.load.image('closeButton', './images/closeButton.png');
+        this.load.image('certButton', './images/certBtn.png');
+        this.load.image('certificate', './images/certificate.png');
 
         this.load.spineAtlas("uniAtlas", `./2D/Unicorn/uniSkeleton.atlas`);
         this.load.spineJson("uniJson", `./2D/Unicorn/uniSkeleton.json`);
@@ -278,9 +278,9 @@ class Dressup extends Phaser.Scene
         const eyelashSlider = makeSelector(164, 370, 1, 'lashes', ['With Eyelashes', 'No Eyelashes'])
         const maneSlider = makeSelector(164, 200, 2, 'mane', ['Cropped', 'Curled', 'Flowing'])
         const tailSlider = makeSelector(164, 285, 2, 'tail', ['Long', 'Poised', 'Sleek'])
-        const hornSlider = makeSelector(164, 200, 5, 'horn', ['Shining', 'Cracked', 'Crystal', 'Sharp', 'Radiant', 'Jeweled'])
-        const hornLengthSlider = makeSelector(164, 285, 1, 'hornLength', ['Short', 'Long'])
-        const sizeSlider = makeSelector(164, 200, 6, 'bodySize', ['XXS', 'XS', 'Small', 'Standard', 'Large', 'XL', 'XXL'])
+        const hornSlider = makeSelector(164, 200, 5, 'horn', ['Shining', 'Cracked', 'Crystal', 'Sharp', 'Radiant (Rare)', 'Jeweled (Epic)'])
+        const hornLengthSlider = makeSelector(164, 285, 1, 'hornLength', ['Short', 'Long (Rare)'])
+        const sizeSlider = makeSelector(164, 200, 6, 'bodySize', ['XXS (Legendary)', 'XS (Epic)', 'Small (Rare)', 'Standard', 'Large (Rare)', 'XL (Epic)', 'XXL (Legendary)'])
         const patternSlider = makeSelector(164, 285, 3, 'pattern', ['Dappled', 'Fluffy', 'Silky', 'Tuxedo'])
 
         function makeSelector(x, y, options, key, lable) {
@@ -658,6 +658,72 @@ class Dressup extends Phaser.Scene
             return button
         }
 
+        // ============ Certificate ============ //
+        const cert = this.add.image(200, 260, 'certificate').setScale(.6)
+        let textX = 110
+        let textY = 140
+        let textHeight = 275
+
+        function setCertText() {
+            let primary = `Primary Color\n${Object.keys(game.colors)[game.animalData.primaryColor.colorFamily]}\n\n`
+            let secondary = `Secondary Color\n${Object.keys(game.colors)[game.animalData.secondaryColor.colorFamily]}\n\n`
+            let tertiary = `Tertiary Color\n${Object.keys(game.colors)[game.animalData.tertiaryColor.colorFamily]}\n\n`
+            let eye = `Eye Color\n${Object.keys(game.colors)[game.animalData.eyeColor.colorFamily]}\n\n`
+            let eyeShape = `Eye Shape\n${eyeSlider.list[0].lables[game.animalData.eye]}${game.animalData.lashes ? '' : ' with Eylashes'}\n\n`
+            let pattern = `Pattern\n${patternSlider.list[0].lables[game.animalData.pattern]}\n\n`
+            let horn = `Horn\n${hornSlider.list[0].lables[game.animalData.horn]}\n\n`
+            let hornLength = game.animalData.hornLength ? `Horn Length\n${hornLengthSlider.list[0].lables[game.animalData.hornLength]}\n\n` : ''
+            let mane = `Mane\n${maneSlider.list[0].lables[game.animalData.mane]}\n\n`
+            let tail = `Tail\n${tailSlider.list[0].lables[game.animalData.tail]}\n\n`
+            let size = game.animalData.bodySize === 3 ? '' : `Size\n${sizeSlider.list[0].lables[game.animalData.bodySize]}\n\n`
+            return primary + secondary + tertiary + eye + eyeShape + pattern + horn + hornLength + mane + tail + size
+        }
+
+        let text = this.add.text(textX, textY, setCertText(), { 
+            fontFamily: 'Arial', 
+            color: '#8c37a0', 
+            wordWrap: { width: 310 } 
+        }).setOrigin(0);
+
+        text.setMask(new Phaser.Display.Masks.GeometryMask(this, this.make.graphics().fillRect(textX-8, textY-8, 320, textHeight)));
+        let dragZone = this.add.zone(textX-8, textY-8, 320, textHeight + 6).setOrigin(0).setInteractive();
+
+        dragZone.on('pointermove', function (pointer) {
+
+            if (pointer.isDown){
+                let moveText = 0
+                if (pointer.y < textY + 5) {
+                    moveText = 0
+                } else if (pointer.y > textY + textHeight - 5) {
+                    moveText = text.height - textHeight
+                } else {
+                    moveText = (pointer.y - textY) / textHeight * (text.height - textHeight)
+                }
+
+                text.y = textY - moveText
+            }
+        });
+
+        
+        // On open cert -> game.currentColor = key
+        
+        const certOpenButton = game.add.sprite(830, 48, 'certButton').setScale(.5)
+        certOpenButton.setInteractive({ useHandCursor: true });
+
+        const certCloseButton = game.add.sprite(330, 75, 'closeButton').setScale(.5)
+        certCloseButton.setInteractive({ useHandCursor: true });
+        certCloseButton.on('pointerdown', () => {
+            closeColor()
+        })
+
+        const certMenu = [cert, text, dragZone, certCloseButton]
+        certOpenButton.on('pointerdown', () => {
+            text.text = setCertText()
+            text.y = textY
+            showTab(certMenu)
+            dragZone.setInteractive(true)
+        })
+
 
         // ============ Tab Control ============ //
         const mainUI = [ui, colorsBtn, featuresBtn, patternsBtn, randomButton]
@@ -675,6 +741,7 @@ class Dressup extends Phaser.Scene
             });
             tabs.push(colorSelector)
             tabs.push(colorPickerTab)
+            tabs.push(certMenu)
             Object.keys(game.colors).forEach(key=>{
                 tabs.push(game.colorButtons[key])
             })
@@ -687,7 +754,8 @@ class Dressup extends Phaser.Scene
             tab.forEach(element => {
                 element.setAlpha(1);
             });
+            
+            dragZone.disableInteractive(false)
         }
-
     }
 }
