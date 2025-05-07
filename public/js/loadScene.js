@@ -19,8 +19,7 @@ class Load extends Phaser.Scene
 
     create ()
     { 
-        console.log(animalType)
-        if (animalType !== 'griffin' && animalType !== 'unicorn') {
+        if (animalType === null || (animalType !== 'griffin' && animalType !== 'unicorn')) {
             const helper = new Helper(this)
             animalType = helper.randomIntFromInterval(0,1)
         }
