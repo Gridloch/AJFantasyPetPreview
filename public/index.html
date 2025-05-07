@@ -6,8 +6,11 @@
         <meta charset="UTF-8" />
         <script src="//cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.js"></script>
         <script src="./js/spine-phaser.js"></script>
-        <script src="./js/loadscreen.js"></script> 
-        <script src="./js/dressup.js"></script> 
+        <script src="./js/loadScene.js"></script> 
+        <script src="./js/uniDressup.js"></script> 
+        <script src="./js/griffDressup.js"></script> 
+        <!-- <script src="./js/dragonDressup.js"></script>  -->
+        <script src="./js/helper.js"></script> 
         <style type="text/css">
             body {
                 margin: 0;
@@ -19,6 +22,10 @@
     <body style="text-align: center;">
         <div id="gameDiv" style="padding-top: 10px; padding-bottom: 10px; margin: auto; max-width: 888px; width: 100%">
             <script type="text/javascript">
+                const searchQueryString = window.location.search;
+                const urlParameters = new URLSearchParams(searchQueryString);
+                let animalType = urlParameters.get('animal')
+
                 let config = {
                     parent: "gameDiv",
                     dom: {
@@ -35,7 +42,9 @@
                     },
                     scene: [
                         Load,
-                        Dressup
+                        UniDressup,
+                        GriffDressup,
+                        // DragonDressup
                     ]
                 };
                 const game = new Phaser.Game(config);
